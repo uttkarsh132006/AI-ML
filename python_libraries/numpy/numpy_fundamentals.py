@@ -80,7 +80,7 @@ a2  #need not tell
 
 
 # itemsize
-print(a3.itemsize)
+print(a3.itemsize) #tell the item size of the object
 
 
 # dtype
@@ -88,3 +88,76 @@ print(a1.dtype)
 print(a2.dtype)
 print(a3.dtype)
 
+
+
+
+
+#Changing Datatype
+# astype
+a4=a3.astype(np.int32) #it dosent make change in the orignal array it returns a new array
+print(a3.itemsize)
+print(a4.itemsize)
+
+
+
+
+#Array Operations
+
+
+a1 = np.arange(12).reshape(3,4)
+a2 = np.arange(12,24).reshape(3,4)
+
+a2
+
+
+# scalar operations
+
+# arithmetic
+a1 ** 2
+
+
+
+# relational
+a2 == 15
+
+
+
+# vector operations
+# arithmetic
+a1 ** a2
+
+
+#Array Functions
+
+a1 = np.random.random((3,3))
+a1 = np.round(a1*100)
+a1
+
+
+# max/min/sum/prod
+# 0 -> col and 1 -> row
+np.prod(a1,axis=0)# max/min/sum/prod
+# 0 -> col and 1 -> row
+np.prod(a1,axis=0)
+
+
+# mean/median/std/var
+np.var(a1,axis=1)
+
+
+# trigonomoetric functions
+np.sin(a1)
+
+
+# dot product
+a2 = np.arange(12).reshape(3,4)
+a3 = np.arange(12,24).reshape(4,3)
+
+np.dot(a2,a3)
+
+# log and exponents
+np.exp(a1)
+
+# round/floor/ceil
+
+np.ceil(np.random.random((2,3))*100)
