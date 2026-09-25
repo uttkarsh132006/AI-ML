@@ -104,7 +104,7 @@ print(a4.itemsize)
 #Array Operations
 
 
-a1 = np.arange(12).reshape(3,4)
+a1 = np.arange(12).reshape(3,4) #creating 2 numpy array
 a2 = np.arange(12,24).reshape(3,4)
 
 a2
@@ -113,35 +113,46 @@ a2
 # scalar operations
 
 # arithmetic
-a1 ** 2
+a1 ** 2  # every number will be power 2
 
 
 
 # relational
-a2 == 15
+a2 == 15  #checking if every number is 15
+a2>5 # CHECKING IF EVERY. NUMBER IS GREATR THAN 5
 
 
 
 # vector operations
 # arithmetic
-a1 ** a2
+a1 ** a2 # it will be two large
+print(a1+a2)
+print(a1*a2)
 
 
 #Array Functions
 
 a1 = np.random.random((3,3))
-a1 = np.round(a1*100)
+a1 = np.round(a1*100) #this rounds off to the neaarest integer 
 a1
 
 
 # max/min/sum/prod
+
+np.sum(a1)
+np.max(a1)
+np.min(a1)
+np.prod(a1)
+# 0 -> col and 1 -> row. if we give axis =0 it will give the mthod for very col and if axis=1 it will give the method for every row
+print(np.max(a1,axis=0))# max/min/sum/prod
 # 0 -> col and 1 -> row
-np.prod(a1,axis=0)# max/min/sum/prod
-# 0 -> col and 1 -> row
-np.prod(a1,axis=0)
+print(np.max(a1,axis=1))
 
 
 # mean/median/std/var
+
+#we can do the whole without axis and we can do it with respect to rows and colm with axis
+
 np.var(a1,axis=1)
 
 
@@ -153,11 +164,33 @@ np.sin(a1)
 a2 = np.arange(12).reshape(3,4)
 a3 = np.arange(12,24).reshape(4,3)
 
-np.dot(a2,a3)
+np.dot(a2,a3) #for dot product to be treu a2 colm=a3=row and size willl wil(a2row,a3 colm)
 
 # log and exponents
 np.exp(a1)
 
 # round/floor/ceil
-
+np.round(np.random.random(3,3)*100)
+np.floor(a3)
 np.ceil(np.random.random((2,3))*100)
+
+
+
+#indexing and slicing
+
+a1 = np.arange(10)
+a2 = np.arange(12).reshape(3,4)
+a3 = np.arange(8).reshape(2,2,2)
+
+a3
+
+
+#normal indexing to fectch numbers and
+
+a1[-1] # last element and 0 will give first
+
+# in a 3d matrix
+
+a3[1,1,1]#SAYING THAT THERE ARE 2 2D MATRIX SO LAST MATRIX LAST ROW AND LAST COLM
+#slicing
+a1[1:4] # here also last one is not included
