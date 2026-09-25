@@ -87,3 +87,4 @@ print(a3.itemsize)
 print(a1.dtype)
 print(a2.dtype)
 print(a3.dtype)
+
