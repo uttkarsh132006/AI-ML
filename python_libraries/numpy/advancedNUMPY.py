@@ -84,3 +84,55 @@ print(a[(a>50) & (a%2 == 0)]) #do not use and here its a logical operator use & 
 
 #3. if there is no 1 you should not strech and streching is done only if there is one and if ther is no one and the dimensions are unequal 
 # then brodcasting cannot pe performed and it would give an error
+
+
+#sigmoid function
+
+#creates an function of its own 
+
+def sigmoid(array):
+    return 1/(1+np.exp(-(array)))
+
+
+a=np.arange(100)
+
+print(sigmoid(a))
+
+
+#mean sqaured error
+
+actual=np.random.randint(1,50,25)
+predicted=np.random.randint(1.50,25)
+
+def mse(actual,predicted): #so this is basically you can create your own complex function in one go its very complex
+    return np.mean((actual-predicted)**2)
+
+print(mse(actual,predicted))
+
+#working with missing values
+
+a=np.array([1,2,3,4,np.nan,6])
+
+np.nan # it is treated al null in numpy
+
+#to remove all the nan values
+
+print(a[~(np.isnan(a))]) #isnan is a function which ask every element if its a nan
+
+
+#ploting graph
+
+import matplotlib.pyplot as plt
+
+x=np.linspace(-10,10,100)
+y=x
+
+plt.plot(x,y)
+plt.show()
+
+#Y=X**2
+
+y=x**2
+
+plt.plot(x,y)
+plt.show()
