@@ -194,3 +194,5 @@ a1[-1] # last element and 0 will give first
 a3[1,1,1]#SAYING THAT THERE ARE 2 2D MATRIX SO LAST MATRIX LAST ROW AND LAST COLM
 #slicing
 a1[1:4] # here also last one is not included
+
+
