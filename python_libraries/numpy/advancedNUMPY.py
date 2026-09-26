@@ -70,3 +70,17 @@ print(a>50)
 #now we can use it aas an mask
 
 print(a[a>50]) #this will filter out the numbers less than 50
+
+
+print(a[(a>50) & (a%2 == 0)]) #do not use and here its a logical operator use & here because its a bitwise operator and goes with bool values
+
+
+
+# brodcasting
+
+#1. make the smaller dimension array to larger dimension by adding 1s at the start only
+
+#2. if there is a one make it strech to the corresponding deminsion of the bigger array
+
+#3. if there is no 1 you should not strech and streching is done only if there is one and if ther is no one and the dimensions are unequal 
+# then brodcasting cannot pe performed and it would give an error
