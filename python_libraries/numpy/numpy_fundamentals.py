@@ -266,3 +266,41 @@ for i in a3:
 
 for i in np.nditer(a3):
     print(i)
+
+
+#transpose
+
+print(np.transpose(a2))
+
+#shorthand
+
+print(a2.T) #same thing
+
+#ravel
+
+print(a3.ravel())
+
+
+#horizontal staking and vertical stacking
+
+print(a2)
+
+a4=np.arange(12,24).reshape(3,4)
+
+print(a4)
+
+print(np.hstack((a2,a4))) #horizontal shape same hona chaiye
+
+print(np.vstack((a2,a4))) #vertical shape same hona chaiye 
+
+#hsplit v split
+
+#in hsplit->we cut it vertically
+
+#in vsplit ->we cut it horizontally
+
+print(np.hsplit(a4,2))
+
+# not if we write 5 here which wont make sense cause there are 4 colm and if we write 3 it will also throw error
+
+print(np.vsplit(a4,3)) # same here it would only except value which would be able to divide it completely
