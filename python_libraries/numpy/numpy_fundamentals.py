@@ -212,3 +212,57 @@ print(a2[:2,1:3])
 print(a2[:2,:4:2])
 
 
+#now in 3d array
+
+a3=np.arange(27).reshape(3,3,3) # hsee how the multiplication of no*rows*colm must be eqal to the number given because simply reshaping wont work 
+#it needs to be valid
+
+print(a3)
+
+print(a3[1])
+print(a3[1,1])
+print(a3[1,1,1])
+
+#now the same here also 
+
+#a3[from:till:jump,rows(from):rows(till):jump,colm(from):colm(till):jump]
+
+#if i want to print the first and the last matrix
+
+print(a3[::2]) #only first one id filled and the nxt are not so it taker alll value
+
+#if i weant 2nd matrix ka bich wala colm
+
+print(a3[1,:,1]) # as you can see we have to invoke slicing syntax cause if we leave it for the default value to fill in the it will give a syntax error 
+#as we know the default values must be toward the farther most right
+
+
+
+print(a3)
+
+#now i want to print 22,23,,25,26
+
+print(a3[2,1:,1:])
+
+
+#now to print 0,2,,18,20
+
+print(a3[::2,0,::2]) #hame sare matrix chaiye alternate wale and onle the first row the all the colm alternatively
+
+
+
+#iterating
+
+for i in a1:
+    print(i) #this will print every ele
+
+for i in a2:
+    print(i) #this will print every 1d array in the 2d array
+
+for i in a3:
+    print(i) #this will print every 2d array in the 3d array
+
+#now for printing every element in the array
+
+for i in np.nditer(a3):
+    print(i)
