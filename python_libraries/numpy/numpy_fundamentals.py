@@ -170,7 +170,8 @@ np.dot(a2,a3) #for dot product to be treu a2 colm=a3=row and size willl wil(a2ro
 np.exp(a1)
 
 # round/floor/ceil
-np.round(np.random.random(3,3)*100)
+a1=np.random.random((3,3))
+np.round(a1*100)
 np.floor(a3)
 np.ceil(np.random.random((2,3))*100)
 
@@ -194,5 +195,20 @@ a1[-1] # last element and 0 will give first
 a3[1,1,1]#SAYING THAT THERE ARE 2 2D MATRIX SO LAST MATRIX LAST ROW AND LAST COLM
 #slicing
 a1[1:4] # here also last one is not included
+
+
+#a2 is 2d numpy array
+
+#a2[row(from):row(till):jump,colm(from):colm:(till):jump]  herer till is not included and if you miss any value it will be marked as all
+# and in the jump by default it is 1 and if we pass 2 it will go alternate 3 it will go 1print 2 miss then print
+
+print(a2) # now see in the out put the array is printed 
+
+#if i want to print 1,2,5,6
+
+print(a2[:2,1:3])
+
+#0,2,,4,6
+print(a2[:2,:4:2])
 
 
