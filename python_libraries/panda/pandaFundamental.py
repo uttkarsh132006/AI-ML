@@ -54,3 +54,37 @@ runs=pd.read_csv('/Users/uttkarshsingh/Documents/code/AI-ML/python_libraries/pan
 
 
 print(runs)
+
+
+bolly=pd.read_csv('/Users/uttkarshsingh/Documents/code/AI-ML/python_libraries/panda/bollywood.csv',index_col='movie').squeeze()
+
+print(bolly) #it will get a name that the colm name of values like in this case its lead
+
+
+#series method
+
+#head and tail method
+#it gives preview
+
+print(subs.head()) #by default 5
+
+print(subs.head(6)) #if we give value i head it will give top 6
+
+#tail it gives last 5 by deafult
+
+print(runs.tail(4))
+
+
+#sample 
+#it gives random row from the data set
+
+print(bolly.sample()) #random 1 row everyu time diffrent
+
+print(bolly.sample(5)) #random 5 row so every time diffrent
+
+
+#values
+
+#it provides count to how many time a value in data set is reoccured
+
+print(bolly.value_counts()) #to get how many movies a actor has done in accesnding order
