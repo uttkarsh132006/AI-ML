@@ -88,3 +88,44 @@ print(bolly.sample(5)) #random 5 row so every time diffrent
 #it provides count to how many time a value in data set is reoccured
 
 print(bolly.value_counts()) #to get how many movies a actor has done in accesnding order
+
+
+#sort_VALUES
+#it do not do permanent changes
+print(runs.sort_values()) #sort i accending order 
+
+print(runs.sort_values(ascending=False)) #this will give in desending
+
+#and if i want to know the hieghest
+
+print(runs.sort_values(ascending=False).head(1).values[0]) #if i did only .values it would return a numpy array 
+#but i want the single value so values[0]
+
+
+
+#to change in the orignal array
+#runs.sort_values(inplace=True) #this will change the orignal array this only works if we add .copy() after .squeeze()
+#  it will be true if we use without squeeze
+
+
+#sort_index
+#here also ve have acending and inplace parameter
+print(bolly.sort_index())
+
+
+
+#count
+
+#the basic diifrence between size and count is that if there is a nan values count wont count it but size will
+
+
+print(runs.count())
+
+
+#sum #it sums the values 
+print(subs.sum())
+#print(bolly.sum()) #this will create a string and add all the string to it and the output will be big so commenting it
+
+
+#product
+print(subs.product()) #this will give 0 beacause there is a zero in the data set 
