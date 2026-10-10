@@ -152,4 +152,52 @@ print(runs.max())
 
 #describe
 
-print(runs.describe())
+print(runs.describe()) # describe summrry of the data like count,mean,min ,25% inning have value less then 9
+
+
+
+
+#series indexing
+
+#integer indexing
+
+x=pd.Series([2,38,25,33,55,34,54,3,52])
+
+print(x[1]); # one thing to note here negitive indexing is not possible
+
+#now in the series in. wich we created using read.csv file we ccan access it diffrentl;y
+
+
+print(bolly.iloc[0],bolly['Uri: The Surgical Strike']) #.iloc is used to index number wise positioning 
+#.loc[] will be used for labels  bolly.loc[Uri: The Surgical Strike] and if the index is not provided 
+#the thier is a index created starting from 0 and onward .loc[0] will acces the 1st ele
+
+#from more clearence do gpt for iloc and loc
+
+# we can do negative indexing using iloc[-1]
+
+print(bolly.iloc[-1])
+
+
+
+#slicing
+
+print(runs[5:16]) # printing runs of virat kohli from 5 matches to 15 matches 
+
+
+#negative 
+print(bolly[-5:])
+
+
+#with jump
+print(bolly[::2])
+
+#fancy indexing
+
+print(runs[[1,3,7,9]])
+
+
+
+
+#edditting a series
+
