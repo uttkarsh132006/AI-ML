@@ -129,3 +129,27 @@ print(subs.sum())
 
 #product
 print(subs.product()) #this will give 0 beacause there is a zero in the data set 
+
+
+#meAN/median/mode/std/var
+
+print(subs.mean()) #prints average
+
+print(runs.median()) #prints middile 
+
+print(bolly.mode()) #prints the most picture a bollywood actor has done
+
+print(runs.std()) #prints std daviation of the rumns of virat kohli
+
+print(runs.var()) #prints varience of the runs 
+
+
+#min/max
+
+print(runs.min())
+print(runs.max())
+
+
+#describe
+
+print(runs.describe())
